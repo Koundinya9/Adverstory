@@ -1,0 +1,13 @@
+streamlit
+gensim
+faiss-cpu
+numpy
+pandas
+google-cloud-vision
+langchain-google-vertexai
+langchain-core
+langchain
+google-cloud-aiplatform
+protobuf # Required version for VertexAI compatibility
+moviepy
+pillow
