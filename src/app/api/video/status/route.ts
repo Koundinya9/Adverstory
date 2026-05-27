@@ -8,6 +8,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: "missing operation" }, { status: 400 });
     }
     const result = await pollVideoJob(operationName);
+    console.log("[video/status]", JSON.stringify(result));
     return NextResponse.json(result);
   } catch (err) {
     const message = err instanceof Error ? err.message : "Unknown error";
